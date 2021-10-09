@@ -1,0 +1,312 @@
+@font-face {
+  font-family: 'Montserrat-Light';
+  src: url('./fonts/Montserrat-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url('./fonts/Montserrat-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat-Medium';
+  src: url('./fonts/Montserrat-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat-Semibold';
+  src: url('./fonts/Montserrat-Semibold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src: url('./fonts/Montserrat-Bold.ttf') format('truetype');
+}
+
+
+
+hr {
+  margin: 1rem 0;
+  color: inherit;
+  background-color: currentColor !important;
+  border: 0;
+  opacity: 0.25;
+}
+
+
+/*General classes*/
+
+body {
+  width: 100%;
+  float: left;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat-Regular';
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+p {
+  font-size: 16px;
+  margin-bottom: 0;
+  font-family: 'Montserrat-Regular';
+}
+
+img {
+  max-width: 100%;
+  height: auto!important;
+}
+
+a, button, input[type="submit"] {
+  transition: all 0.5s ease!important;
+  text-decoration: none;
+}
+
+a:hover, button:hover, input[type="submit"]:hover {
+  opacity: 0.8!important;
+  text-decoration: none!important;
+  transition: all 0.5s ease!important;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Volte-Bold';
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+
+/*Login Page Styling Start */
+.login-page {
+  background: url(images/login-bg.png) no-repeat;
+  background-size: cover;
+  padding: 55px 0;
+}
+.login-page .login-text {
+  background: url(images/image-background.png) no-repeat;
+  padding: 107px 30px 8px;
+  background-size: 100% 617px;
+  border-bottom: 5px solid white;
+}
+.login-page .login-text h1 {
+  color: #fff;
+  font-family: 'Montserrat-Bold';
+  font-size: 25px;
+  padding-right: 60px;
+}
+.login-page .login-text h4 {
+  color: #fff;
+  font-size: 20px;
+  font-family: 'Montserrat-Medium';
+  margin-top: 50px;
+}
+.login-page .login-text h4 img {
+  margin: 2px 0 0 20px;
+}
+.login-page .login-text .signup-with {
+  margin-top: 140px;
+  float: right
+}
+.login-page .login-text .signup-with p {
+  color: #fff;
+  font-family: 'Montserrat-Medium';
+}
+.login-page .login-text .signup-with p a:first-child img {
+  margin-left: 15px;
+}
+.login-page .login-form {
+  background: url(images/color-background.png) no-repeat;
+  padding: 47px 40px 0;
+  background-size: 100% 472px;
+}
+.login-page .login-form .close {
+  opacity: 1;
+  margin-top: -40px;
+  position: absolute;
+  right: -39px;
+  top: 65px;
+}
+.login-page .login-form h1 {
+  font-family: 'Montserrat-Bold';
+  color: #663434;
+}
+.login-page .login-form h5 {
+  color: #515151;
+  font-family: 'Montserrat-Regular';
+  font-size: 18px;
+  margin: 15px 0;
+}
+.login-page .login-form h5 span {
+  color: #b92120;
+  font-family: 'Montserrat-Semibold';
+}
+.login-page .login-form form {
+  margin-top: 30px;
+}
+.login-page .login-form form input {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #AEAEAE;
+  color: #ce174d;
+  padding: 10px 10px 10px 50px;
+  font-size: 14px;
+  outline: none;
+  margin-bottom: 20px;
+}
+.login-page .login-form form input.user {
+  background: url(images/username.png) no-repeat;
+  background-position: left 10px center;
+}
+.login-page .login-form form input.password {
+  background: url(images/password.png) no-repeat;
+  background-position: left 10px center;
+}
+.login-page .login-form form input.remember {
+  width: auto;
+  margin-right: 10px;
+}
+.login-page .login-form form .remember-me {
+  float: left;
+  font-size: 14px;
+  color: #515151;
+}
+.login-page .login-form form .forgot {
+  float: right;
+  font-family: 'Montserrat-Semibold';
+  font-size: 14px;
+  color: #b92120;
+}
+.login-page .login-form form .login {
+  background-color: #b92120;
+  border: none;
+  border-radius: 50px;
+  color: #fff;
+  padding: 7px 33px;
+  width: auto;
+  font-family: 'Montserrat-Bold';
+  text-transform: uppercase;
+  font-size: 15px;
+  margin-top: 50px;
+  display: block;
+}
+.login-page .login-form form .not-account {
+  font-size: 14px;
+  color: #515151;
+  margin-bottom: 70px;
+}
+.login-page .login-form form .not-account a {
+  font-family: 'Montserrat-Semibold';
+  color: #b92120;
+  margin-left: 20px;
+}
+/*Login Page Styling End */
+
+
+
+@media(min-width: 1280px){
+  .container {
+    max-width: 1200px;
+  }
+}
+@media(max-width: 1279.98px){
+  .container {
+    max-width: 98%;
+  }
+}
+@media(max-width: 1151.98px){
+  .login-page .login-text .signup-with {
+    margin-top: 190px;
+  }
+  .login-page .login-text h1 {
+    font-size: 45px;
+    padding-right: 0;
+  }
+  .login-page .login-form .close {
+    right: -20px;
+  }
+}
+@media(max-width: 991.98px){
+  .login-page .login-text .signup-with {
+    margin-top: 220px;
+  }
+  .login-page .login-text h1 {
+    font-size: 34px;
+  }
+  .login-page .login-form form .forgot {
+    margin-top: 0;
+  }
+}
+@media(max-width: 767.98px){
+  .login-page .login-form .close {
+    display: none;
+  }
+  .login-page .login-form form .forgot {
+    margin-top: 20px;
+  }
+  .login-page .login-form {
+    padding-bottom: 100px;
+  }
+}
+@media(max-width: 575.98px){
+  .login-page .login-text .signup-with {
+    margin-top: 150px;
+  }
+  .login-page .login-form form .forgot ,
+  .login-page .login-form form .remember-me {
+    float: none;
+  }
+  .login-page .login-form form .not-account a {
+    margin-left: 0;
+    display: block;
+  }
+  .login-page .login-form form .not-account {
+    font-size: 17px;
+  }
+  .login-page .login-form form .login {
+    margin-top: 50px;
+  }
+  .login-page .login-text {
+    padding-top: 200px;
+  }
+  .login-page .login-text h1 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 775px) {
+  .login-text {
+    display: none !important;
+  }
+
+  .login-form {
+    background-size: 100% 781px !important;
+  }
+
+  .mobile-signup {
+    margin-top: 20px;
+  }
+
+  .login-page .login-form form .not-account {
+    margin-top: 30px;
+}
+  
+}
+@media screen and (min-width: 776px) { 
+  .mobile-signup {
+    display: none;
+  }
+}
+
+
+h1 {
+  font-size: 1.5rem;
+}
+
+
+body {
+  background: url(images/login-bg.png) no-repeat;
+    background-size: cover;
+}
