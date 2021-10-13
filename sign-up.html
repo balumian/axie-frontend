@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link href="style.css" rel="stylesheet">
+    <style>
+        .sign-up {
+            height: 100vh;
+            background-image: url(images/login-bg.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sign-up .sign-up-left-section {
+            height: 100%;
+            background-image: url(images/image-background.png);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            padding: 185px 16px 0 35px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .sign-up .sign-up-right-section {
+            height: 100%;
+            background-image: url(images/color-background.png);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            padding: 60px 24px 60px;
+        }
+
+        .year-c {
+            position: relative;
+            bottom: -15px;
+        }
+
+        .form-group {
+            margin-bottom: 4px!important;
+        }
+
+        .sign-up .form-control::placeholder {
+            color: #8080809c;
+        }
+
+        .sign-up-left-section-upper {
+            width: 50%;
+        }
+
+        .calender-select-img {
+            position: absolute;
+            left: 10px;
+            bottom: 10px;
+            width: 16px;
+        }
+
+        .signup-input-fields {
+            background-repeat: no-repeat;
+            background-position: left 10px center;
+            background-size: 16px;
+        }
+
+        .user-name {
+            background-image: url(images/username.png);
+        }
+
+        .discord-id {
+            background-image: url(images/discord.png);
+        }
+
+        .user-email {
+            background-image: url(images/email.png);
+        }
+
+        .user-password {
+            background-image: url(images/password.png);
+        }
+
+        .sign-up-left-section-down .signup-with p {
+            color: #FFF;
+            text-align: right;
+            margin-bottom: 20px;
+        }
+
+        .eng {
+
+            background-color: #ea2322;
+            color: #FFF;
+            padding: 4px;
+            border-radius: 4px;
+            display: inline-block;
+
+        }
+
+        .eng-outer {
+            margin-left: 70px;
+            background: #8080801c;
+            border-radius: 4px;
+            padding-right: 8px;
+            font-size: 12px;
+        }
+
+        .close-img {
+            width: 60px;
+            right: -30px;
+            top: 25px;
+        }
+
+        @media (max-width: 1400px) {
+            /*.sign-up-inner {*/
+            /*    width: 55%;*/
+            /*}*/
+
+            .sign-up-left-section-upper {
+                width: 60%;
+            }
+
+            .sign-up .sign-up-right-section {
+                padding: 24px 24px 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="sign-up">
+    <div class="px-md-3 row mx-0 sign-up-inner">
+        <div class="d-md-block d-none col-md-6 pr-sm-0">
+            <div class="sign-up-left-section">
+                <div class="sign-up-left-section-upper">
+                    <h5 class="text-white mb-3">Your Dream Work is Waiting for You!</h5>
+                    <span class="text-white">Sign Up Now<img src="images/login-icon.png" width="36" class="ml-3"></span>
+                </div>
+                <div class="sign-up-left-section-down">
+                    <div class="signup-with">
+                        <p>SIGN UP WITH
+                            <a href="#"><img src="images/fb.png"></a>
+                            <a href="#"><img src="images/gmail.png"></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 pl-sm-0">
+            <div class="position-relative sign-up-right-section">
+                <div class="d-sm-inline-block d-none position-absolute close-img">
+                    <img src="images/close.png">
+                </div>
+                <div>
+                    <h4 class="d-inline">Sign Up</h4><div class="d-inline-block eng-outer"><span class="small eng">ENG</span><Span class="pl-2 small d-inline-block">SPAN</Span></div>
+                </div>
+                <p class="small my-xl-3 my-2">How do I get Started with <span class="red-color-text">CRYPTBUCK?</span></p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" placeholder="Username" class="form-control user-name signup-input-fields"/>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Discord Id" class="form-control discord-id signup-input-fields"/>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email" class="form-control user-email signup-input-fields"/>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" placeholder="Password" class="form-control user-password signup-input-fields"/>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" placeholder="Confirm Password" class="form-control user-password signup-input-fields"/>
+                    </div>
+                    <div class="form-group">
+                        <div class="position-relative">
+                            <img src="images/calendar.png" class="calender-select-img" />
+                            <select class="form-control">
+                                <option value="Date of Birth" selected disabled>Date of Birth</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="profPhoto">
+                        <label class="signup-input-fields custom-file-label" for="profPhoto">Profile Photo</label>
+                    </div>
+                </form>
+                <p class="small my-xl-3 my-2">By Registering You Agree to the <span class="red-color-text">CRYPTBUCK?</span> Terms</p>
+                <button type="submit" class="red-btn">Register</button>
+                <p class="my-xl-3 my-2">Already have an Account? <a href="#" class="red-color-text">Login</a></p>
+            </div>
+        </div>
+    </div>
+    <p class="text-center text-white mb-0 year-c">© 2020-2021 | CryptBuck</p>
+</div>
+
+
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" href="fontawesome/js/all.min.js"></script>
+<script src="js/custom.js"></script>
+</body>
+</html>
