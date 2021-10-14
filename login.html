@@ -2,63 +2,72 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
-	<link href="style.css" rel="stylesheet">
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link href="style.css" rel="stylesheet">
 </head>
+
 <body>
-	<!-- <img src="images/login-bg.png" style="" alt=""> -->
-	<section class="login-page">
-		
-		<div class="container">
-			<div class="row no-gutters">
-				<div class="col-md-4 offset-md-2 login-text">
-					<h1>Your Dream Work is Waiting for You!</h1>
-					<h4>Login Now <img src="images/login-icon.png"></h4>
-					<div class="signup-with">
-						<p>SIGN UP WITH 
-							<a href="#"><img src="images/fb.png"></a>
-							<a href="#"><img src="images/gmail.png"></a>
-						</p>
-					</div>
-				</div>
-				<div class="col-md-4  login-form">
-					<div class="close">
-						<img src="images/close.png">
-					</div>
-					<h1>Login</h1>
-					<h5>How do I Get Started with <span>CRYPTBUCK?</span></h5>
-					<form>
-						<input type="text" name="username" placeholder="Username" class="user">
-						<input type="password" name="password" placeholder="Password" class="password">
-						<div class="remember-me">
-							<input type="checkbox" name="remember" class="remember">
-							<span>Remember me</span>
-						</div>
-						<a class="forgot" href="#">Forgot Password?</a>
-						<input type="submit" name="login" class="login" value="Login">
-						<p class="not-account">Don’t have an account yet? <a href="#">Sign up</a></p>
-						<div class="signup-with mobile-signup">
-							<p>SIGN UP WITH 
-								<a href="#"><img src="images/fb.png"></a>
-								<a href="#"><img src="images/gmail.png"></a>
-							</p>
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
-	</section>
+
+<div class="sign-up login">
+    <div class="col-xl-7 col-lg-9 px-md-3 row mx-0 sign-up-inner">
+        <div class="d-md-block d-none col-md-6 pr-sm-0">
+            <div class="sign-up-left-section">
+                <div class="sign-up-left-section-upper">
+                    <h4 class="text-white mb-3">Your Dream Work is Waiting for You!</h4>
+                    <span class="text-white">Sign Up Now<img src="images/login-icon.png" width="36" class="ml-3"></span>
+                </div>
+                <div class="sign-up-left-section-down">
+                    <div class="signup-with">
+                        <p>SIGN UP WITH
+                            <a href="#"><img src="images/fb.png"></a>
+                            <a href="#"><img src="images/gmail.png"></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 pl-sm-0">
+            <div class="position-relative sign-up-right-section">
+                <div class="d-sm-inline-block d-none position-absolute close-img">
+                    <img src="images/close.png">
+                </div>
+                <h4 class="d-inline">Login</h4>
+                <p class="small my-xl-3 my-md-2 my-1">How do I get Started with <span class="red-color-text">CRYPTBUCK?</span></p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" placeholder="Username" class="form-control user-name signup-input-fields"/>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" placeholder="Password" class="form-control user-password signup-input-fields"/>
+                    </div>
+                    <div class="form-group d-flex flex-wrap justify-content-between remember-forget-text">
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheckDisabled">
+                            <label class="custom-control-label" for="customCheckDisabled">Remember me</label>
+                        </div>
+                        <a class="forgot red-color-text" href="#">Forgot Password?</a>
+                    </div>
+                </form>
+                <button type="submit" class="mb-4 red-btn">Login</button>
+                <div class="d-md-none signup-with text-center">
+                    <p><b class="pr-2">SIGN UP WITH</b>
+                        <a href="#" class="d-md-none d-inline-block rounded-circle account-social-icons"><img src="images/fb.png"></a>
+                        <a href="#" class="d-md-none d-inline-block rounded-circle account-social-icons"><img src="images/gmail.png"></a>
+                    </p>
+                </div>
+                <p class="my-xl-3 my-md-2 my-1">Don't have an account yet? <a href="#" class="red-color-text">Sign up</a></p>
+            </div>
+        </div>
+    </div>
+    <p class="text-center text-white mb-0 year-c">© 2020-2021 | CryptBuck</p>
+</div>
 
 
-
-
-	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" href="fontawesome/js/all.min.js"> </script>
-	<script src="js/custom.js"></script>
-
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" href="fontawesome/js/all.min.js"></script>
+<script src="js/custom.js"></script>
 </body>
 </html>

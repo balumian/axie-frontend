@@ -70,6 +70,117 @@ h1, h2, h3, h4, h5, h6 {
 
 /*global*/
 
+.sign-up {
+    height: 100vh;
+    overflow: hidden;
+    background-image: url(images/login-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-up .sign-up-left-section {
+    height: 100%;
+    background-image: url(images/image-background.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 185px 16px 0 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.login .sign-up-left-section {
+    padding: 155px 16px 0 35px;
+}
+
+.sign-up .sign-up-right-section {
+    height: 100%;
+    background-image: url(images/color-background.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 60px 24px 60px;
+}
+
+.sign-up .year-c {
+    position: relative;
+    bottom: -15px;
+}
+
+.login .year-c {
+    position: relative;
+    bottom: -40px;
+}
+
+.sign-up .form-control::placeholder {
+    color: #8080809c;
+}
+
+.sign-up-left-section-upper {
+    width: 50%;
+}
+
+.sign-up .calender-select-img {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    width: 16px;
+}
+
+.sign-up .signup-input-fields {
+    background-repeat: no-repeat;
+    background-position: left 10px center;
+    background-size: 16px;
+}
+
+.sign-up .user-name {
+    background-image: url(images/username.png);
+}
+
+.sign-up .discord-id {
+    background-image: url(images/discord.png);
+}
+
+.sign-up .user-email {
+    background-image: url(images/email.png);
+}
+
+.sign-up .user-password {
+    background-image: url(images/password.png);
+}
+
+.sign-up .sign-up-left-section-down .signup-with p {
+    color: #FFF;
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.sign-up .eng {
+    background-color: #ea2322;
+    color: #FFF;
+    padding: 4px;
+    border-radius: 4px;
+    display: inline-block;
+
+}
+
+.sign-up .eng-outer {
+    margin-left: 70px;
+    background: #8080801c;
+    border-radius: 4px;
+    padding-right: 8px;
+    font-size: 12px;
+}
+
+.sign-up .close-img {
+    width: 60px;
+    right: -30px;
+    top: 25px;
+}
+
 .sign-up .custom-file-label {
     background-color: unset;
     border: 0;
@@ -79,7 +190,7 @@ h1, h2, h3, h4, h5, h6 {
     background-image: url(images/image.png);
 }
 
-.custom-file-input:lang(en) ~ .custom-file-label::after {
+.sign-up .custom-file-input:lang(en) ~ .custom-file-label::after {
     content: "Choose File";
 }
 
@@ -90,7 +201,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .sign-up .form-group {
-    margin-bottom: .50rem;
+    margin-bottom: 4px!important;
+}
+
+.sign-up .remember-forget-text {
+    margin: 12px 0!important;
 }
 
 .sign-up .form-control {
@@ -426,6 +541,24 @@ h1 {
 
 
 /*Tech Devs*/
+@media (max-width: 1400px) {
+    .sign-up-left-section-upper {
+        width: 60%;
+    }
+
+    .sign-up .sign-up-right-section {
+        padding: 24px 24px;
+    }
+
+    .login .sign-up-left-section-upper {
+        width: 70%;
+    }
+
+    .login .sign-up-right-section {
+        padding: 80px 24px;
+    }
+}
+
 @media (max-width: 1199px) {
     .red-btn {
          padding: 6px 18px;
@@ -433,6 +566,10 @@ h1 {
 }
 
 @media (max-width: 991px) {
+    .signup-with p {
+        font-size: 12px!important;
+    }
+
     input, select, .custom-file-label, p, a, button {
         font-size: 14px!important;
     }
@@ -462,5 +599,20 @@ h1 {
     .year-c {
         position: absolute!important;
         bottom: 8px!important;
+    }
+}
+
+@media (max-width: 767px) {
+    .account-social-icons {
+        box-shadow: 0 0 6px #00000045;
+        margin: 0 4px;
+        width: 40px;
+        display: none;
+    }
+}
+
+@media (max-width: 575px) {
+    input, select, .custom-file-label, p, a, button {
+        font-size: 12px !important;
     }
 }

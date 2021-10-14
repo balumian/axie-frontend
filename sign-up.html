@@ -6,127 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
     <link href="style.css" rel="stylesheet">
-    <style>
-        .sign-up {
-            height: 100vh;
-            background-image: url(images/login-bg.png);
-            background-repeat: no-repeat;
-            background-size: cover;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .sign-up .sign-up-left-section {
-            height: 100%;
-            background-image: url(images/image-background.png);
-            background-repeat: no-repeat;
-            background-size: 100% 100%;
-            padding: 185px 16px 0 35px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
-        .sign-up .sign-up-right-section {
-            height: 100%;
-            background-image: url(images/color-background.png);
-            background-repeat: no-repeat;
-            background-size: 100% 100%;
-            padding: 60px 24px 60px;
-        }
-
-        .year-c {
-            position: relative;
-            bottom: -15px;
-        }
-
-        .form-group {
-            margin-bottom: 4px!important;
-        }
-
-        .sign-up .form-control::placeholder {
-            color: #8080809c;
-        }
-
-        .sign-up-left-section-upper {
-            width: 50%;
-        }
-
-        .calender-select-img {
-            position: absolute;
-            left: 10px;
-            bottom: 10px;
-            width: 16px;
-        }
-
-        .signup-input-fields {
-            background-repeat: no-repeat;
-            background-position: left 10px center;
-            background-size: 16px;
-        }
-
-        .user-name {
-            background-image: url(images/username.png);
-        }
-
-        .discord-id {
-            background-image: url(images/discord.png);
-        }
-
-        .user-email {
-            background-image: url(images/email.png);
-        }
-
-        .user-password {
-            background-image: url(images/password.png);
-        }
-
-        .sign-up-left-section-down .signup-with p {
-            color: #FFF;
-            text-align: right;
-            margin-bottom: 20px;
-        }
-
-        .eng {
-
-            background-color: #ea2322;
-            color: #FFF;
-            padding: 4px;
-            border-radius: 4px;
-            display: inline-block;
-
-        }
-
-        .eng-outer {
-            margin-left: 70px;
-            background: #8080801c;
-            border-radius: 4px;
-            padding-right: 8px;
-            font-size: 12px;
-        }
-
-        .close-img {
-            width: 60px;
-            right: -30px;
-            top: 25px;
-        }
-
-        @media (max-width: 1400px) {
-            /*.sign-up-inner {*/
-            /*    width: 55%;*/
-            /*}*/
-
-            .sign-up-left-section-upper {
-                width: 60%;
-            }
-
-            .sign-up .sign-up-right-section {
-                padding: 24px 24px 24px;
-            }
-        }
-    </style>
 </head>
 
 <body>
@@ -157,7 +36,7 @@
                 <div>
                     <h4 class="d-inline">Sign Up</h4><div class="d-inline-block eng-outer"><span class="small eng">ENG</span><Span class="pl-2 small d-inline-block">SPAN</Span></div>
                 </div>
-                <p class="small my-xl-3 my-2">How do I get Started with <span class="red-color-text">CRYPTBUCK?</span></p>
+                <p class="small my-xl-3 my-md-2 my-1">How do I get Started with <span class="red-color-text">CRYPTBUCK?</span></p>
                 <form>
                     <div class="form-group">
                         <input type="text" placeholder="Username" class="form-control user-name signup-input-fields"/>
@@ -187,9 +66,15 @@
                         <label class="signup-input-fields custom-file-label" for="profPhoto">Profile Photo</label>
                     </div>
                 </form>
-                <p class="small my-xl-3 my-2">By Registering You Agree to the <span class="red-color-text">CRYPTBUCK?</span> Terms</p>
+                <p class="small my-xl-3 my-md-2 my-1">By Registering You Agree to the <span class="red-color-text">CRYPTBUCK?</span> Terms</p>
                 <button type="submit" class="red-btn">Register</button>
-                <p class="my-xl-3 my-2">Already have an Account? <a href="#" class="red-color-text">Login</a></p>
+                <div class="d-md-none signup-with text-center">
+                    <p><b class="pr-2">SIGN UP WITH</b>
+                        <a href="#" class="d-md-none d-inline-block rounded-circle account-social-icons"><img src="images/fb.png"></a>
+                        <a href="#" class="d-md-none d-inline-block rounded-circle account-social-icons"><img src="images/gmail.png"></a>
+                    </p>
+                </div>
+                <p class="my-xl-3 my-md-2 my-1">Already have an Account? <a href="#" class="red-color-text">Login</a></p>
             </div>
         </div>
     </div>
