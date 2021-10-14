@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+  <title></title>
+  <!-- General CSS Files -->
+  <link rel="stylesheet" href="../assets/css/app.min.css">
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/components.css">
+  <!-- Custom style CSS -->
+  <link rel="stylesheet" href="../assets/css/custom.css">
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+<div class="loader"></div>
+<div id="app">
+  <div class="main-wrapper main-wrapper-1">
+    <div class="navbar-bg"></div>
+    <nav class="navbar navbar-expand-lg main-navbar sticky">
+      <div class="form-inline mr-auto">
+        <ul class="navbar-nav mr-3">
+          <li><a href="#" data-toggle="sidebar" class="nav-link nav-link-lg
+                                      collapse-btn"><span class="fa fa-angle-left"></span></a></li>
+          <li class="h4 mb-0 d-flex align-items-center"><b>Dashboard</b></li>
+        </ul>
+      </div>
+      <ul class="navbar-nav navbar-right">
+        <form class="form-inline">
+          <div class="position-relative d-flex align-items-center search-element">
+            <input class="form-control" type="search" placeholder="Search" aria-label="Search"
+                   data-width="200">
+            <button class="btn" type="submit">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </form>
+        <li class="dropdown mx-2"><a href="#" data-toggle="dropdown"
+                                     class="nav-link dropdown-toggle nav-link-lg nav-link-user"> <span class="earth-globe"><img alt="image"
+                                                                                                                                src="../images/earth-globe.png"
+                                                                                                                                class="user-img-radious-style"></span>English
+          <span class="fa fa-angle-down"></span>
+          <span class="d-sm-none d-lg-inline-block"></span></a>
+          <div class="dropdown-menu dropdown-menu-right pullDown">
+            <div class="dropdown-title">Hello Sarah Smith</div>
+            <a href="profile.html" class="dropdown-item has-icon"> <i class="far
+                                          fa-user"></i> Profile
+            </a> <a href="timeline.html" class="dropdown-item has-icon"> <i class="fas fa-bolt"></i>
+            Activities
+          </a> <a href="#" class="dropdown-item has-icon"> <i class="fas fa-cog"></i>
+            Settings
+          </a>
+            <div class="dropdown-divider"></div>
+            <a href="auth-login.html" class="dropdown-item has-icon text-danger"> <i
+                    class="fas fa-sign-out-alt"></i>
+              Logout
+            </a>
+          </div>
+        </li>
+        <li class="dropdown"><a href="#" data-toggle="dropdown"
+                                class="nav-link dropdown-toggle nav-link-lg nav-link-user"> <img alt="image"
+                                                                                                 src="../assets/img/user.png"
+                                                                                                 class="user-img-radious-style"> Will Smith
+          <span class="fa fa-angle-down"></span>
+          <span class="d-sm-none d-lg-inline-block"></span></a>
+          <div class="dropdown-menu dropdown-menu-right pullDown">
+            <div class="dropdown-title">Hello Sarah Smith</div>
+            <a href="profile.html" class="dropdown-item has-icon"> <i class="far
+                                          fa-user"></i> Profile
+            </a> <a href="timeline.html" class="dropdown-item has-icon"> <i class="fas fa-bolt"></i>
+            Activities
+          </a> <a href="#" class="dropdown-item has-icon"> <i class="fas fa-cog"></i>
+            Settings
+          </a>
+            <div class="dropdown-divider"></div>
+            <a href="auth-login.html" class="dropdown-item has-icon text-danger"> <i
+                    class="fas fa-sign-out-alt"></i>
+              Logout
+            </a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <div class="main-sidebar sidebar-style-2">
+      <aside id="sidebar-wrapper">
+        <div class="sidebar-brand">
+          <a href="index.html"> <img alt="image" src="../assets/img/logo.png" class="header-logo"/> <span
+                  class="logo-name">CRYPTBUCK</span>
+          </a>
+        </div>
+        <ul class="sidebar-menu">
+          <li class="dropdown active">
+            <a href="index.html" class="nav-link"><i data-feather="home"></i><span>Dashboard</span></a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="menu-toggle nav-link has-dropdown"><i
+                    data-feather="users"></i><span>Scholarship</span></a>
+            <ul class="dropdown-menu">
+              <li><a class="nav-link" href="#">Application 1</a></li>
+              <li><a class="nav-link" href="#">Application 2</a></li>
+              <li><a class="nav-link" href="#">Application 3</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="nav-link"><i data-feather="monitor"></i><span>Market</span></a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="nav-link"><i data-feather="monitor"></i><span>Program</span></a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="nav-link"><i data-feather="monitor"></i><span>Help</span></a>
+          </li>
+        </ul>
+      </aside>
+    </div>
+    <!-- Main Content -->
+    <div class="main-content">
+      <section class="section">
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="pills-general-tab" data-toggle="pill" href="#pills-general" role="tab" aria-controls="pills-general" aria-selected="true">General</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-jugadores-tab" data-toggle="pill" href="#pills-jugadores" role="tab" aria-controls="pills-jugadores" aria-selected="false">Jugadores/Equipos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-pagos-tab" data-toggle="pill" href="#pills-pagos" role="tab" aria-controls="pills-pagos" aria-selected="false">Pagos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-recompensas-tab" data-toggle="pill" href="#pills-recompensas" role="tab" aria-controls="pills-recompensas" aria-selected="false">Recompensas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-competiciones-tab" data-toggle="pill" href="#pills-competiciones" role="tab" aria-controls="pills-competiciones" aria-selected="false">Competiciones</a>
+          </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="pills-general" role="tabpanel" aria-labelledby="pills-general-tab">
+            <div class="row">
+              <div class="col-md-12 col-lg-12 col-xl-12">
+                <!-- Support tickets -->
+                <div class="card" style="margin-bottom: 10px;">
+
+                  <div class="card-body">
+                    <div class="support-ticket media pb-1 mb-3">
+                      <div class="banner-img ">
+                        <img src="..assets/img/users/question.png" alt="">
+                      </div>
+                      <div class="media-body ml-3" style="border-left: 1px solid bisque;padding-left: 20px;">
+
+
+                        <p style="margin: 0px;font-weight: bold;">Loerom Name Meaning</p>
+                        <p class="my-1">Historically, surnames evolved as a way to sort people into groups - by occupation, place of origin, clan affiliation, patronage, parentage, adoption, and even physical characteristics (like red hair). Many of the modern surnames in the dictionary can be traced back to Britain and Ireland....</p>
+
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+                <div class="card" style="margin-bottom: 10px;">
+
+                  <div class="card-body">
+                    <div class="support-ticket media pb-1 mb-3">
+                      <div class="banner-img ">
+                        <img src="..assets/img/users/question.png" alt="">
+                      </div>
+                      <div class="media-body ml-3" style="border-left: 1px solid bisque;padding-left: 20px;">
+
+
+                        <p style="margin: 0px;font-weight: bold;">Loerom Name Meaning</p>
+                        <p class="my-1">Historically, surnames evolved as a way to sort people into groups - by occupation, place of origin, clan affiliation, patronage, parentage, adoption, and even physical characteristics (like red hair). Many of the modern surnames in the dictionary can be traced back to Britain and Ireland....</p>
+
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+                <div class="card" style="margin-bottom: 10px;">
+
+                  <div class="card-body">
+                    <div class="support-ticket media pb-1 mb-3">
+                      <div class="banner-img ">
+                        <img src="..assets/img/users/question.png" alt="">
+                      </div>
+                      <div class="media-body ml-3" style="border-left: 1px solid bisque;padding-left: 20px;">
+
+
+                        <p style="margin: 0px;font-weight: bold;">Loerom Name Meaning</p>
+                        <p class="my-1">Historically, surnames evolved as a way to sort people into groups - by occupation, place of origin, clan affiliation, patronage, parentage, adoption, and even physical characteristics (like red hair). Many of the modern surnames in the dictionary can be traced back to Britain and Ireland....</p>
+
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+                <div class="card" style="margin-bottom: 10px;">
+
+                  <div class="card-body">
+                    <div class="support-ticket media pb-1 mb-3">
+                      <div class="banner-img ">
+                        <img style="margin: 0 auto;" src="..assets/img/users/question.png" alt="">
+                      </div>
+                      <div class="media-body ml-3" style="border-left: 1px solid bisque;padding-left: 20px;">
+
+
+                        <p style="margin: 0px;font-weight: bold;">Loerom Name Meaning</p>
+                        <p class="my-1">Historically, surnames evolved as a way to sort people into groups - by occupation, place of origin, clan affiliation, patronage, parentage, adoption, and even physical characteristics (like red hair). Many of the modern surnames in the dictionary can be traced back to Britain and Ireland Historically, surnames evolved as a way to sort people into groups - by occupation, place of origin, clan affiliation, patronage, parentage, adoption, and even physical characteristics (like red hair). Many of the modern surnames in the dictionary can be traced back to Britain and Ireland........</p>
+
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+                <!-- Support tickets -->
+              </div>
+
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-jugadores" role="tabpanel" aria-labelledby="pills-jugadores-tab">..1.</div>
+          <div class="tab-pane fade" id="pills-pagos" role="tabpanel" aria-labelledby="pills-pagos-tab">..233.</div>
+          <div class="tab-pane fade" id="pills-recompensas" role="tabpanel" aria-labelledby="pills-recompensas-tab">.34..</div>
+          <div class="tab-pane fade" id="pills-competiciones" role="tabpanel" aria-labelledby="pills-competiciones-tab">..4.</div>
+        </div>
+      </section>
+    </div>
+    <footer class="main-footer">
+      <div class="footer-left">
+      </div>
+      <div class="footer-right">
+      </div>
+    </footer>
+  </div>
+</div>
+<!-- General JS Scripts -->
+<script src="../assets/js/app.min.js"></script>
+<!-- JS Libraies -->
+<script src="../assets/bundles/apexcharts/apexcharts.min.js"></script>
+<!-- Page Specific JS File -->
+<script src="../assets/js/page/index.js"></script>
+<!-- Template JS File -->
+<script src="../assets/js/scripts.js"></script>
+<!-- Custom JS File -->
+<script src="../assets/js/custom.js"></script>
+</body>
+
+</html>

@@ -539,6 +539,61 @@ h1 {
     font-size: 1.5rem;
 }
 
+/*top bar and sidebar*/
+a.nav-link[data-toggle="sidebar"] {
+    background: #FFF;
+    padding: 6px!important;
+    color: #000;
+    border-radius: 25px;
+    margin-right: 8px;
+}
+
+.navbar .nav-link.nav-link-user .user-img-radious-style {
+    border-radius: 50px;
+    box-shadow: 0 0 6px #00000025;
+}
+
+.nav-link-user img {
+    width: 25px;
+}
+
+.theme-white .navbar {
+    background-color: unset;
+    box-shadow: unset;
+}
+
+.nav-link-user {
+    color: #000!important;
+    background: #FFF;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+}
+
+.theme-white .navbar .form-inline .form-control {
+    background-color: #FFF;
+    border-radius: 14px;
+}
+
+.theme-white .navbar .form-inline .btn {
+    background-color: #dc3545;
+    color: #FFF;
+    border-radius: 8px;
+    padding: 0;
+    width: 33px;
+    height: 33px;
+    position: absolute;
+    right: 0px;
+}
+
+.earth-globe {
+    background: #80808017;
+    border-radius: 4px;
+    padding: 4px;
+    display: flex;
+}
+/*top bar and sidebar*/
 
 /*Tech Devs*/
 @media (max-width: 1400px) {
