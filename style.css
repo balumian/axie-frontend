@@ -595,6 +595,215 @@ a.nav-link[data-toggle="sidebar"] {
 }
 /*top bar and sidebar*/
 
+.faq-tabs {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    text-align: center;
+}
+
+.faq-tabs .nav-item {
+    margin: 6px;
+}
+
+.faq-tabs .nav-item:first-child {
+    margin-left: 0;
+}
+
+.faq-tabs .nav-item:last-child {
+    margin-right: 0;
+}
+
+.faq-tabs .nav-link {
+    border-radius: 20px;
+    color: #000!important;
+    background: #FFF;
+    padding: 16px!important;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 6px;
+    height: 100%;
+    transition: all .3s ease;
+}
+
+.faq-tabs .nav-link:hover {
+    background-color: #b71c1c!important;
+    color: #FFF!important;
+}
+
+.faq-tabs .nav-link:hover img {
+    filter: brightness(0) invert(1);
+}
+
+.faq-tabs .nav-link img {
+    height: 24px!important;
+}
+
+.faq-tabs  .nav-link.active {
+    color: #FFF!important;
+    background-color: #b71c1c!important;
+}
+.faq-tabs  .nav-link.active img {
+    filter: brightness(0) invert(1);
+}
+
+.scrollBgNav {
+    background-color: #FFF!important;
+    box-shadow: 0 0 1px #00000065!important;
+}
+
+.scrollBgNav .form-control,
+.scrollBgNav .nav-link.nav-link-user {
+    background-color: #cccccc24!important;
+}
+
+/*day and night mode*/
+.dark{
+    background-color: #222;
+    color: #e6e6e6;
+}
+.theme-switch-wrapper {
+    display: flex;
+    align-items: center;
+}
+.theme-switch {
+    display: inline-block;
+    height: 23px;
+    position: relative;
+    width: 39px;
+    text-align: right;
+}
+.theme-switch input {
+    display:none;
+}
+.slider {
+    background-color: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+}
+.slider:before {
+    bottom: 2px;
+    background-color: #fff;
+    bottom: 4px;
+    content: "";
+    height: 26px;
+    left: 4px;
+    position: absolute;
+    transition: .4s;
+    width: 26px;
+}
+.slider {
+    background-color: #f0f3ff;
+}
+input:checked + .slider:before {
+    transform: translateX(15px);
+}
+.slider.round {
+    border-radius: 34px;
+}
+.slider.round:before {
+    border-radius: 50%;
+    background-image: url(./images/sun.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 8px;
+    height: 16px;
+    width: 16px;
+}
+input:checked + .slider:before {
+    border-radius: 50%;
+    background-image: url(./images/moon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 8px;
+    height: 16px;
+    width: 16px;
+}
+/*day and night mode*/
+
+.main-sidebar {
+    padding: 0 24px;
+}
+
+.sidebar-menu img {
+    width: 14px;
+}
+
+.sidebar-link-below-section img {
+    width: 12px;
+}
+
+.sidebar-link-below-section p {
+    font-size: 14px;
+    margin-left: 13px;
+}
+
+.light-sidebar .main-sidebar .sidebar-menu li.active a {
+    color: #b71c1c!important;
+}
+
+.main-sidebar .sidebar-brand {
+    text-align: left;
+    height: 100%;
+    line-height: normal;
+}
+
+.main-sidebar .logo-name-upper {
+    font-size: 14px;
+    text-align: center;
+    color: #b71c1c!important;
+}
+
+.main-sidebar .logo-name-below {
+    font-size: 8px;
+    text-align: center;
+}
+
+.main-sidebar .sidebar-brand a .header-logo {
+    height: 30px!important;
+}
+
+.main-sidebar .sidebar-menu li .menu-toggle:before {
+    content: "\f107";
+    font-size: 14px;
+}
+
+.main-sidebar .sidebar-menu li .menu-toggle:after {
+    content: "\f106";
+    font-size: 14px;
+}
+
+.sidebar-link-below-section {
+    background-color: #f0f3ff;
+    border-radius: 30px;
+    padding: 8px 16px;
+    margin: 24px 0;
+}
+
+.sidebar-link-below-section-upper {
+    border-bottom: 1px solid #dee2e6;
+}
+
+.main-sidebar .sidebar-menu li {
+    margin: 4px 0;
+}
+
+.main-sidebar .sidebar-menu {
+    border-bottom: 1px solid #dee2e6;
+    padding-bottom: 16px;
+}
+
+.main-sidebar .sidebar-menu li a {
+    border-radius: 30px;
+}
+
 /*Tech Devs*/
 @media (max-width: 1400px) {
     .sign-up-left-section-upper {

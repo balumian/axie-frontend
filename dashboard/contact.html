@@ -86,18 +86,29 @@
     </nav>
     <div class="main-sidebar sidebar-style-2">
       <aside id="sidebar-wrapper">
-        <div class="sidebar-brand">
-          <a href="index.html"> <img alt="image" src="../images/logo.png" class="header-logo"/> <span
-                  class="logo-name">CRYPTBUCK</span>
-          </a>
+        <div class="my-4 d-flex align-items-center">
+          <div class="sidebar-brand">
+            <a href="#" class="d-flex align-items-center">
+              <img alt="image" src="../images/logo.png" class="header-logo"/>
+              <div class="ml-2 d-flex flex-column">
+                <span class="logo-name-upper">CRYPTBUCK</span>
+                <span class="logo-name-below">AXIE INFINITY</span>
+              </div>
+            </a>
+          </div>
+          <div class="theme-switch-wrapper">
+            <label class="mb-0 theme-switch" for="checkbox">
+              <input type="checkbox" id="checkbox" />
+              <div class="slider round"></div>
+            </label>
+          </div>
         </div>
         <ul class="sidebar-menu">
           <li class="dropdown active">
-            <a href="index.html" class="nav-link"><i data-feather="home"></i><span>Dashboard</span></a>
+            <a href="index.html" class="nav-link"><i><img src="../images/home-copy.png"></i><span>Dashboard</span></a>
           </li>
           <li class="dropdown">
-            <a href="#" class="menu-toggle nav-link has-dropdown"><i
-                    data-feather="users"></i><span>Scholarship</span></a>
+            <a href="#" class="menu-toggle nav-link has-dropdown"><i><img src="../images/user-group.png"></i><span>Scholarship</span></a>
             <ul class="dropdown-menu">
               <li><a class="nav-link" href="#">Application 1</a></li>
               <li><a class="nav-link" href="#">Application 2</a></li>
@@ -105,15 +116,22 @@
             </ul>
           </li>
           <li class="dropdown">
-            <a href="#" class="nav-link"><i data-feather="monitor"></i><span>Market</span></a>
+            <a href="#" class="nav-link"><i><img src="../images/shopping-bag.png"></i><span>Market</span></a>
           </li>
           <li class="dropdown">
-            <a href="#" class="nav-link"><i data-feather="monitor"></i><span>Program</span></a>
+            <a href="#" class="nav-link"><i><img src="../images/gear.png"></i><span>Program</span></a>
           </li>
           <li class="dropdown">
-            <a href="#" class="nav-link"><i data-feather="monitor"></i><span>Help</span></a>
+            <a href="#" class="nav-link"><i><img src="../images/padlock.png"></i><span>Administration</span></a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="nav-link"><i><img src="../images/question-mark-copy.png" style="filter: contrast(0.6)"></i><span>Help</span></a>
           </li>
         </ul>
+        <div class="sidebar-link-below-section">
+          <div class="d-flex align-items-center sidebar-link-below-section-upper"><img src="../images/628px-Ethereum_logo_2014.svg.png"><p class="mb-0">3584.87 USD <span class="small font-weight-bold text-success">0.64%</span></p></div>
+          <div class="d-flex align-items-center sidebar-link-below-section-below"><img src="../images/Layer-6.png"><p class="mb-0">3584.87 USD <span class="small font-weight-bold text-danger">-2.64%</span></p></div>
+        </div>
       </aside>
     </div>
     <!-- Main Content -->
