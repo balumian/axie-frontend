@@ -8,12 +8,12 @@
 "use strict";
 
 $(function () {
-    $('#checkbox').click(function(){
+    $('#dayNightMode').click(function(){
         var element = document.body;
         element.classList.toggle("dark");
     });
-    if ($(window).scrollTop() == 0) {
-        $('.theme-white .navbar').removeClass('scrollBgNav');
+    if ($(window).scrollTop() != 0) {
+        $('.theme-white .navbar').addClass('scrollBgNav');
     }
     $(window).on('scroll', function () {
         $('.theme-white .navbar').addClass('scrollBgNav');
