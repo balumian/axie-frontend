@@ -728,6 +728,32 @@ input:checked + .slider:before {
 }
 /*day and night mode*/
 
+.sidebar-mini .main-sidebar .sidebar-menu>li>a {
+    display: inline-grid;
+}
+
+.sidebar-mini .logo-name-upper,
+.sidebar-mini .logo-name-below {
+    display: none;
+}
+
+.sidebar-mini .theme-switch-wrapper {
+    display: none;
+}
+
+.sidebar-mini .main-sidebar .sidebar-brand a .header-logo {
+    height: 30px!important;
+    object-fit: contain;
+}
+
+.sidebar-mini .sidebar-link-below-section {
+    display: none;
+}
+
+.sidebar-mini .main-sidebar .sidebar-menu {
+    border-bottom: none;
+}
+
 .main-sidebar {
     padding: 0 24px;
 }
